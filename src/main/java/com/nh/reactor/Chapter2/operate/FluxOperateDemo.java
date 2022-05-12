@@ -2,6 +2,7 @@ package com.nh.reactor.Chapter2.operate;
 
 import com.sun.javafx.binding.StringFormatter;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Hooks;
 import reactor.core.publisher.Mono;
 
 /**
@@ -10,14 +11,43 @@ import reactor.core.publisher.Mono;
 public class FluxOperateDemo {
 
     public static void main(String[] args) {
-        condition();
+        log();
     }
 
+    /**
+     * 日志操作符
+     */
+    static void log(){
+        // log 观察所有数据并使用日志工具进行跟踪
+        Flux.just(1,2).log().subscribe(System.out::print);
+        // debug
+
+    }
+
+    /**
+     * 数学操作符
+     */
+    static void math(){
+        // count 统计Flux的元素个数
+        Flux.just("a",2,3).count().subscribe(System.out::print);
+        System.out.println("-----------------------");
+        // reduce 累积Flux的元素，返回Mono
+        Flux.range(1,10).reduce((x,y)->x+y).subscribe(System.out::print);
+        System.out.println("-----------------------");
+    }
     /**
      * 条件操作符
      */
     static void condition(){
-        // defaultIfEmpty
+        // defaultIfEmpty 如果序列为空，则返回一个默认值
+        Flux.just().defaultIfEmpty("default").subscribe(System.out::println);
+        System.out.println("-----------------------");
+        // takeUnit 提取元素直到条件返回true
+        Flux.range(1,100).takeUntil(i->i==10).subscribe(System.out::print);
+        System.out.println("-----------------------");
+        // skipUtil 丢弃数据，直到条件返回true，才不丢弃
+        Flux.range(1,15).skipUntil(i->i==10).subscribe(System.out::print);
+        System.out.println("-----------------------");
 
     }
     /**
