@@ -1,8 +1,6 @@
-package com.nh.reactor.Chapter2.operate;
+package com.nh.reactor.api.operate;
 
-import com.sun.javafx.binding.StringFormatter;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Hooks;
 import reactor.core.publisher.Mono;
 
 /**
