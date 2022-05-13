@@ -12,3 +12,4 @@ spring:
 logging:
   level:
     org.springframework.data.mongodb.core: debug
+    com.alibaba.cloud.stream.binder.rocketmq: info

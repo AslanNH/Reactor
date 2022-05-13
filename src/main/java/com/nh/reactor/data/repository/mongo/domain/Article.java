@@ -1,4 +1,4 @@
-package com.nh.reactor.Data.repository.mongo.domain;
+package com.nh.reactor.data.repository.mongo.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

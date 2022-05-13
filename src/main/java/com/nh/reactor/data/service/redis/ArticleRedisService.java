@@ -1,7 +1,7 @@
-package com.nh.reactor.Data.service.redis;
+package com.nh.reactor.data.service.redis;
 
-import com.nh.reactor.Data.repository.mongo.domain.Article;
-import com.nh.reactor.Data.repository.redis.dao.ArticleReactiveRedisRepository;
+import com.nh.reactor.data.repository.mongo.domain.Article;
+import com.nh.reactor.data.repository.redis.dao.ArticleReactiveRedisRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

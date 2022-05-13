@@ -1,7 +1,7 @@
-package com.nh.reactor.Data.controller.mongo;
+package com.nh.reactor.data.controller.mongo;
 
-import com.nh.reactor.Data.repository.mongo.domain.Article;
-import com.nh.reactor.Data.service.mongo.ArticleMongoService;
+import com.nh.reactor.data.repository.mongo.domain.Article;
+import com.nh.reactor.data.service.mongo.ArticleMongoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;

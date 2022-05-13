@@ -1,7 +1,7 @@
-package com.nh.reactor.Data.service.mongo;
+package com.nh.reactor.data.service.mongo;
 
-import com.nh.reactor.Data.repository.mongo.dao.ArticleReactiveMongoRepository;
-import com.nh.reactor.Data.repository.mongo.domain.Article;
+import com.nh.reactor.data.repository.mongo.dao.ArticleReactiveMongoRepository;
+import com.nh.reactor.data.repository.mongo.domain.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;

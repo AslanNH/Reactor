@@ -1,7 +1,7 @@
-package com.nh.reactor.Data.controller.redis;
+package com.nh.reactor.data.controller.redis;
 
-import com.nh.reactor.Data.repository.mongo.domain.Article;
-import com.nh.reactor.Data.service.redis.ArticleRedisService;
+import com.nh.reactor.data.repository.mongo.domain.Article;
+import com.nh.reactor.data.service.redis.ArticleRedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;

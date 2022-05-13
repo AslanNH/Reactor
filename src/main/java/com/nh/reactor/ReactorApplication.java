@@ -1,6 +1,6 @@
 package com.nh.reactor;
 
-import com.nh.reactor.Data.repository.mongo.domain.Article;
+import com.nh.reactor.data.repository.mongo.domain.Article;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

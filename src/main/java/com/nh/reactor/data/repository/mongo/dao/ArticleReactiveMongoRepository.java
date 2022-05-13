@@ -1,6 +1,6 @@
-package com.nh.reactor.Data.repository.mongo.dao;
+package com.nh.reactor.data.repository.mongo.dao;
 
-import com.nh.reactor.Data.repository.mongo.domain.Article;
+import com.nh.reactor.data.repository.mongo.domain.Article;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.data.repository.query.ReactiveQueryByExampleExecutor;
 import org.springframework.stereotype.Repository;
