@@ -43,7 +43,7 @@ public class ReactorApplication {
             ReactiveRedisConnectionFactory reactiveRedisConnectionFactory
     ){
         Jackson2JsonRedisSerializer<Article> serializer =
-                new Jackson2JsonRedisSerializer<Article>(Article.class);
+                new Jackson2JsonRedisSerializer<>(Article.class);
 
         RedisSerializationContext.RedisSerializationContextBuilder<String,Article>builder
                 = RedisSerializationContext.newSerializationContext(new StringRedisSerializer());
